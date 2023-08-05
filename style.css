@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: white;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background:url("pizza/images/pizza2.png");
+    background-size: 50% 90%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    padding: 0px 70px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0px 5px grey;
+}
+
+.logo img{
+        height: 72PX;
+        width: 100px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.menu a:last-child{
+    background: brown;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.menu a:hover{
+   color: red;
+   font-size:larger;
+   cursor: pointer;
+}
+.h-text{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 15px;
+}
+.h-text p{
+    color: #262626;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.h-text h1{
+    font-size: 4em;
+    line-height: 1.5em;
+}
+.h-text h1 span{
+    color: red;
+}
+.h-text h2{
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+#order{
+    text-decoration: none;
+    color: rgb(255, 217, 217);
+    background: red;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#order:hover{
+    background-color: green;
+    cursor: pointer;
+}
+#pizza{
+    position: absolute;
+    bottom: 11%;
+    left: 5%;
+}
+#pizza img{
+    transition: 0.4s ease;
+}
+#pizza img:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:2rem;
+}
+.about-img{
+    padding-top: 50px;
+    height: auto;
+    width: 50;
+}
+
+.about-img img{
+    height: 35rem;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+.about-text h2{
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0.9rem;
+    line-height: 1.3rem;
+}
+.about-text p{
+    font-size: var(--p-font);
+    color: var(--second-colour);
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 2.3rem;
+}
+.category h2{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.category .category-p{
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+.category-grid{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+.category h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin-top: 23px;
+    text-align: center;
+}
+.category-grid p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 15px;
+    padding: 8px 12px;
+    text-align: center;
+}
+.category .food-items img{
+    display: block;
+    margin-top: 16px;
+    border-radius: 10%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.category-grid #food{
+    background-color: aquamarine;
+    cursor: pointer;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 15px;
+}
+.category-grid #delivery{
+    background-color: aquamarine;
+    cursor: pointer;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 15px;
+}
+.category-grid #product{
+    background-color: aquamarine;
+    cursor: pointer;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 15px;
+}
+.category-grid .food-items :hover{
+    background-color: green;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    50% {transform: rotate(360deg);}
+}
+footer div{
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+.content_us h1{
+    margin-top: 50px;
+    text-align: center;
+}
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
