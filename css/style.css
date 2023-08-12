@@ -221,3 +221,9 @@ footer div{
     margin-top: 50px;
     text-align: center;
 }
+footer div h1{
+    padding: 18px 12px;
+}
+footer div p{
+    margin-top: 12px;
+}
