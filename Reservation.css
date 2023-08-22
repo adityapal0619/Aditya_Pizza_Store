@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: white;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    padding: 0px 70px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0px 5px grey;
+}
+
+.logo img{
+        height: 72PX;
+        width: 100px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.menu a:last-child{
+    background: brown;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.menu a:hover{
+   color: red;
+   font-size:larger;
+   cursor: pointer;
+}
+.Reser{
+    background-image: url('pizza/images/RESERVATION.jpg');
+    width: 100%;
+    height: 45vh;
+}
+
+.Reser span{
+    position: relative;
+    top: 90px;
+    left: 510px;
+    color: white;
+    background: #2193b0;
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    font-size: 50px;
+}
+main{
+    background-image: url('pizza/images/table-book.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Reservation h3{
+    margin: 33px 21px;
+    font-size: 30px;
+    color: #fd9d3e;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.Reservation h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 70px;
+    color: #1d1d1d;
+    line-height: 58px;
+    letter-spacing: 2px;
+}
+form{
+    text-align: center;
+
+}
+.form_div{
+    margin: 34px 23px;
+}
+form .form_div input{
+    width:500px;
+    height: 30px;
+    padding: 23px 22px;
+    margin: 2px 15px;
+    cursor: pointer;
+    font: 1em sans-serif;
+}
+form .form_div_comments input{
+    width:1040px;
+    height: 30px;
+    padding: 23px 22px;
+    margin: 2px 15px;
+    cursor: pointer;
+    font: 1em sans-serif;
+}
+button{
+    border-radius: 15px;
+    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+    width: 700px;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: x-large;
+    margin: 20px 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}
+footer div{
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+footer div h1{
+    padding: 18px 12px;
+}
+footer div p{
+    margin-top: 12px;
+}
